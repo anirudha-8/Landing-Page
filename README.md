@@ -4,9 +4,9 @@
 
 ---
 
-This project is a landing page created to showcase the portfolio of a Full Stack Developer.
+This project is a fully responsive landing page created to showcase the portfolio of a Full Stack Developer.
 
-## Link -> **[View Project](#)** (Replace with actual link)
+## Link -> **[View Project](#)**
 
 ## Project Overview
 
@@ -57,7 +57,9 @@ To view the project locally:
 Some potential enhancements include:
 
 - Adding animations to the hero section to make it more dynamic.
+
 - Integrating a contact form that allows users to send messages directly from the page.
+
 - Expanding the portfolio section to include more services or projects.
 
 ---
