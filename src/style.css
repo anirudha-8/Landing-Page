@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+:root {
+	--ff-heading: "Merienda", cursive;
+	--ff-text: "Montserrat", sans-serif;
+
+	--clr-dark: #000000;
+	--clr-semi-dark: #161619;
+	--clr-grassy: #515603;
+	--clr-reddish: #722300;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: var(--ff-text);
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--ff-heading);
+}
+
+/* HERO SECTION STYLING */
+.hero {
+	min-height: 100vh;
+	background-image: url(./images/developer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+h1 {
+	margin-top: 10vh;
+	font-size: 1.3rem;
+}
+
+h2 {
+	font-size: 1.1rem;
+	margin-block: 1rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 450px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 850px) {
+	h1 {
+		font-size: 2rem;
+	}
+	.hero {
+		background-position: top;
+	}
+}
+
+@media (min-width: 999px) {
+	h1 {
+		font-size: 2.5rem;
+		margin-top: 6vh;
+	}
+}
+
+/* WORK SECTION STYLING */
+.work-title {
+	background-color: var(--clr-semi-dark);
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.work-span {
+	font-size: 2.1rem;
+}
+
+@media (min-width: 450px) {
+	.work-title {
+		height: 25vh;
+	}
+	h2 {
+		font-size: 1.3rem;
+	}
+	.work-span {
+		font-size: 2.6rem;
+	}
+}
+
+@media (min-width: 850px) {
+	.work-title {
+		height: 30vh;
+	}
+	h2 {
+		font-size: 1.8rem;
+	}
+	.work-span {
+		font-size: 3.6rem;
+	}
+}
+
+@media (min-width: 999px) {
+	.work-title {
+		height: 35vh;
+	}
+	h2 {
+		font-size: 2.3rem;
+	}
+	.work-span {
+		font-size: 4.6rem;
+	}
+}
+
+.grid-container {
+	width: 100%;
+	max-width: 1150px;
+	margin: 5rem auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 2rem;
+}
+
+.card {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	border-radius: 1rem;
+	transition: 0.2s all;
+	margin: 1rem;
+}
+
+.card:hover {
+	transform: scale(1.02);
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+	height: 40%;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+.card h2,
+.card p {
+	color: var(--clr-dark);
+	margin-bottom: 1rem;
+	margin-inline: 1rem;
+	text-align: justify;
+}
+
+.card h2 {
+	font-size: 1.5rem;
+}
+
+.card p {
+	font-size: 0.8rem;
+}
+
+/* CONTACT-ME and ABOUT-ME SECTION STYLING */
+.contact-me-and-about-me p {
+	font-size: 0.8rem;
+}
+.contact-me {
+	background-color: var(--clr-grassy);
+}
+
+.about-me {
+	background-color: var(--clr-reddish);
+}
+
+.contact-me,
+.about-me {
+	padding: 1rem;
+}
+
+@media (min-width: 900px) {
+	.contact-me-and-about-me {
+		display: flex;
+	}
+	.contact-me,
+	.about-me {
+		padding: 2rem 5rem 3rem 5rem;
+	}
+	.contact-me-and-about-me h2 {
+		font-size: 3rem;
+	}
+	.contact-me-and-about-me p {
+		font-size: 1rem;
+	}
+}
+
+/* FOOTER STYLING */
+footer {
+	background-color: var(--clr-dark);
+	text-align: center;
+	padding: 1rem;
+}
+
+.footer-text {
+	margin: 0;
+	font-size: 0.8rem;
+	opacity: 0.8;
+}
+
+@media (min-width: 750px) {
+	footer {
+		padding: 2rem;
+	}
+	.footer-text {
+		text-align: right;
+		margin-right: 1rem;
+		font-size: 0.9rem;
+	}
+}
