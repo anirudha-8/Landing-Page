@@ -6,7 +6,7 @@
 
 This project is a fully responsive landing page created to showcase the portfolio of a Full Stack Developer.
 
-## Link -> **[View Project](#)**
+## Link -> **[View Project](https://anirudha-8.github.io/Landing-Page/)**
 
 ## Project Overview
 
